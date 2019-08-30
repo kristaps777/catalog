@@ -28,7 +28,6 @@
                 $getProducts = new Connect();
                 $getProducts->getData();
                 ?>
-
             </div>
 
         </main>
