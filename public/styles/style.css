@@ -1,3 +1,8 @@
+/*
+-----------------------------------
+normalize properties
+-----------------------------------
+*/
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +11,11 @@
     box-sizing: border-box;
 }
 
+/*
+-----------------------------------
+header & footer styles
+-----------------------------------
+*/
 header,
 footer {
     height: 60px;
@@ -14,14 +24,23 @@ footer {
     background-color: black;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 10;
 }
 
 header {
-    position: fixed;
-    z-index: 10;
     top: 0;
 }
 
+footer {
+    bottom: 0;
+}
+
+/*
+-----------------------------------
+main content styles
+-----------------------------------
+*/
 main {
     height: 100vh;
     margin-top: 60px;
@@ -34,7 +53,7 @@ main {
     background-color: #efefef;
     display: grid;
     grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(4, 200px);
+    grid-auto-rows: max-content;
     gap: 1em;
     justify-content: center;
 }
