@@ -17,17 +17,20 @@
         <header>
 
             <h2>product catalog</h2>
+            <input type="submit" name="mass_delete" value="mass delete" form="products">
 
         </header>
 
         <main>
 
             <div class="wrapper">
+            <form id="products" action="../private/mass_delete.php" method="post">
                 <?php
                 require_once('../private/classes/Connect.php');
                 $getProducts = new Connect();
                 $getProducts->getData();
                 ?>
+            </form>
             </div>
 
         </main>

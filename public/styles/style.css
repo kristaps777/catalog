@@ -73,11 +73,15 @@ main {
     margin: 0 auto;
     height: 100%;
     background-color: #efefef;
+}
+
+.wrapper form {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-auto-rows: max-content;
     gap: 1em;
     justify-content: center;
+    height: 100%;
 }
 
 .item {

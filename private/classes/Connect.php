@@ -28,6 +28,7 @@ class Connect
 
         foreach ($this->sql_response as $key => $row) {
         echo "<ul class='item'>";
+        echo "<input type='checkbox' name='select[]' value='$row[id]'";
         echo "<li>$row[sku]</li>";
         echo "<li>$row[name]</li>";
         echo "<li>&euro;$row[price]</li>";
