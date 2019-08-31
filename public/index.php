@@ -17,7 +17,7 @@
         <header>
 
             <h2>product catalog</h2>
-            <input type="submit" name="mass_delete" value="mass delete" form="products">
+            <input type="submit" name="mass_delete" value="delete checked" form="products">
 
         </header>
 
