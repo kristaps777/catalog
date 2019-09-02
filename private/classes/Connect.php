@@ -32,6 +32,13 @@ class Connect
         echo "<li>$row[sku]</li>";
         echo "<li>$row[name]</li>";
         echo "<li>&euro;$row[price]</li>";
+        if ($row['type'] == "DVD") {
+            echo "<li>Size: $row[size] MB</li>";
+        } elseif ($row['type'] == "Furniture") {
+            echo "<li>Dimensions: $row[height]x$row[width]x$row[length]</li>";
+        } elseif ($row['type'] == "Book") {
+            echo "<li>Weight: $row[weight] kg</li>";
+        }
         echo "</ul>";
         
     }

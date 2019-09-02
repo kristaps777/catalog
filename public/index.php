@@ -18,6 +18,7 @@
 
             <h2>product catalog</h2>
             <input type="submit" name="mass_delete" value="delete checked" form="products">
+            <a href="product.html">add product</a>
 
         </header>
 

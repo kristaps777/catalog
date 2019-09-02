@@ -28,15 +28,15 @@
 
             <div class="wrapper flex flex_align_center">
                 <h3>please fill out all of the parameters</h3>
-                <form id="product_params" action="" method="post" class="form_data">
+                <form id="product_params" action="../private/new_product.php" method="post" class="form_data">
                     <section class="products_stats">
                         <div class="data_input flex flex_align_center">
                             <input class="input_background" name="sku" id="sku" type="text" spellcheck="false"
-                                minlength="8" maxlength="8" autocomplete="off" required>
+                                minlength="6" maxlength="6" autocomplete="off" required>
                             <label for="sku">SKU<span class="asterisk">*️</span></label>
                         </div>
                         <div class="data_description flex flex_align_center">Please enter the product SKU number; min
-                            length 8 characters</div>
+                            length 6 characters</div>
                         <div class="data_input flex flex_align_center">
                             <input class="input_background" name="name" id="name" type="text" spellcheck="false"
                                 minlength="1" maxlength="30" autocomplete="off" required>
@@ -51,16 +51,18 @@
                         <div class="data_description flex flex_align_center">Please enter product price (in &euro;)
                         </div>
                         <div class="data_input flex flex_align_center">
-                            <select name="" id="attribute_type" class="input_background">
-                                <option value="" hidden disabled selected>Choose type...</option>
-                                <option value="">DVD</option>
-                                <option value="">Book</option>
-                                <option value="">Furniture</option>
+                            <select name="attribute_type" id="attribute_type" class="input_background">
+                                <option hidden disabled selected>Choose type...</option>
+                                <option>DVD</option>
+                                <option>Book</option>
+                                <option>Furniture</option>
                             </select>
                         </div>
                         <div class="data_description flex flex_align_center"></div>
                     </section>
                     <section id="attribute_stats" class="products_stats"></section>
+
+                    <button type="submit">PRESS</button>
 
                 </form>
             </div>
