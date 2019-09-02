@@ -9,6 +9,9 @@
         <link rel="shortcut icon" href="#">
         <!-- CSS link -->
         <link rel="stylesheet" href="styles/product.css">
+        <!-- JS link -->
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/templates.js" defer></script>
         <title>new product</title>
     </head>
 
@@ -28,61 +31,33 @@
                 <form id="product_params" action="" method="post" class="form_data">
 
                     <div class="data_input">
-                        <input name="sku" id="sku" type="text" spellcheck="false" minlength="1" maxlength="30"
-                            autocomplete="off" required>
+                        <input class="input_background" name="sku" id="sku" type="text" spellcheck="false" minlength="1"
+                            maxlength="30" autocomplete="off" required>
                         <label for="sku">SKU<span class="asterisk">*️</span></label>
                     </div>
+                    <div class="data_description"></div>
                     <div class="data_input">
-                        <input name="name" id="name" type="text" spellcheck="false" minlength="1" maxlength="30"
-                            autocomplete="off" required>
+                        <input class="input_background" name="name" id="name" type="text" spellcheck="false"
+                            minlength="1" maxlength="30" autocomplete="off" required>
                         <label for="name">Name<span class="asterisk">*️</span></label>
                     </div>
+                    <div class="data_description"></div>
                     <div class="data_input">
-                        <input name="price" id="price" type="text" spellcheck="false" minlength="1" maxlength="30"
-                            autocomplete="off" required>
+                        <input class="input_background" name="price" id="price" type="text" spellcheck="false"
+                            minlength="1" maxlength="30" autocomplete="off" required>
                         <label for="price">Price<span class="asterisk">*️</span></label>
                     </div>
-
-                    <select name="" id="attribute_type">
-                        <option value="" hidden disabled selected>Choose type...</option>
-                        <option value="">DVD</option>
-                        <option value="">Book</option>
-                        <option value="">Furniture</option>
-                    </select>
-
-                    <section class="hidden">
-                        <div class="data_input">
-                            <input name="size" id="size" type="text" spellcheck="false" minlength="1" maxlength="30"
-                                autocomplete="off" required>
-                            <label for="size">Size<span class="asterisk">*️</span></label>
-                        </div>
-                    </section>
-
-                    <section class="hidden">
-                        <div class="data_input">
-                            <input name="height" id="height" type="text" spellcheck="false" minlength="1" maxlength="30"
-                                autocomplete="off" required>
-                            <label for="height">Height<span class="asterisk">*️</span></label>
-                        </div>
-                        <div class="data_input">
-                            <input name="width" id="width" type="text" spellcheck="false" minlength="1" maxlength="30"
-                                autocomplete="off" required>
-                            <label for="width">Width<span class="asterisk">*️</span></label>
-                        </div>
-                        <div class="data_input">
-                            <input name="length" id="length" type="text" spellcheck="false" minlength="1" maxlength="30"
-                                autocomplete="off" required>
-                            <label for="length">Length<span class="asterisk">*️</span></label>
-                        </div>
-                    </section>
-
-                    <section class="hidden">
-                        <div class="data_input">
-                            <input name="weight" id="weight" type="text" spellcheck="false" minlength="1" maxlength="30"
-                                autocomplete="off" required>
-                            <label for="weight">Weight<span class="asterisk">*️</span></label>
-                        </div>
-                    </section>
+                    <div class="data_description"></div>
+                    <div class="data_input">
+                        <select name="" id="attribute_type" class="input_background">
+                            <option value="" hidden disabled selected>Choose type...</option>
+                            <option value="">DVD</option>
+                            <option value="">Book</option>
+                            <option value="">Furniture</option>
+                        </select>
+                    </div>
+                    <div class="data_description"></div>
+                    <section id="attribute_stats"></section>
 
                 </form>
             </div>
