@@ -4,7 +4,7 @@ const dvd_template =
     'minlength="1" maxlength="30" autocomplete="off" required>' +
     '<label for="size">Size<span class="asterisk">*️</span></label>' +
     '</div>' +
-    '<div class="data_description"></div>';
+    '<div class="data_description">Please enter a size (in GB)</div>';
 
 const furniture_template =
     '<div class="data_input">' +

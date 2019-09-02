@@ -17,7 +17,7 @@
 
     <body>
 
-        <header>
+        <header class="flex flex_align_center">
 
             <h2>add new</h2>
             <input type="submit" name="mass_delete" value="delete checked" form="products">
@@ -29,42 +29,44 @@
             <div class="wrapper">
                 <h3>please fill out all of the parameters</h3>
                 <form id="product_params" action="" method="post" class="form_data">
-
-                    <div class="data_input">
-                        <input class="input_background" name="sku" id="sku" type="text" spellcheck="false" minlength="1"
-                            maxlength="30" autocomplete="off" required>
-                        <label for="sku">SKU<span class="asterisk">*️</span></label>
-                    </div>
-                    <div class="data_description"></div>
-                    <div class="data_input">
-                        <input class="input_background" name="name" id="name" type="text" spellcheck="false"
-                            minlength="1" maxlength="30" autocomplete="off" required>
-                        <label for="name">Name<span class="asterisk">*️</span></label>
-                    </div>
-                    <div class="data_description"></div>
-                    <div class="data_input">
-                        <input class="input_background" name="price" id="price" type="text" spellcheck="false"
-                            minlength="1" maxlength="30" autocomplete="off" required>
-                        <label for="price">Price<span class="asterisk">*️</span></label>
-                    </div>
-                    <div class="data_description"></div>
-                    <div class="data_input">
-                        <select name="" id="attribute_type" class="input_background">
-                            <option value="" hidden disabled selected>Choose type...</option>
-                            <option value="">DVD</option>
-                            <option value="">Book</option>
-                            <option value="">Furniture</option>
-                        </select>
-                    </div>
-                    <div class="data_description"></div>
-                    <section id="attribute_stats"></section>
+                    <section class="products_stats">
+                        <div class="data_input flex flex_align_center">
+                            <input class="input_background" name="sku" id="sku" type="text" spellcheck="false"
+                                minlength="1" maxlength="30" autocomplete="off" required>
+                            <label for="sku">SKU<span class="asterisk">*️</span></label>
+                        </div>
+                        <div class="data_description flex flex_align_center">please enter the product SKU number; min
+                            length 8 characters</div>
+                        <div class="data_input flex flex_align_center">
+                            <input class="input_background" name="name" id="name" type="text" spellcheck="false"
+                                minlength="1" maxlength="30" autocomplete="off" required>
+                            <label for="name">Name<span class="asterisk">*️</span></label>
+                        </div>
+                        <div class="data_description flex flex_align_center"></div>
+                        <div class="data_input flex flex_align_center">
+                            <input class="input_background" name="price" id="price" type="text" spellcheck="false"
+                                minlength="1" maxlength="30" autocomplete="off" required>
+                            <label for="price">Price<span class="asterisk">*️</span></label>
+                        </div>
+                        <div class="data_description flex flex_align_center"></div>
+                        <div class="data_input flex flex_align_center">
+                            <select name="" id="attribute_type" class="input_background">
+                                <option value="" hidden disabled selected>Choose type...</option>
+                                <option value="">DVD</option>
+                                <option value="">Book</option>
+                                <option value="">Furniture</option>
+                            </select>
+                        </div>
+                        <div class="data_description flex flex_align_center"></div>
+                    </section>
+                    <section id="attribute_stats" class="products_stats"></section>
 
                 </form>
             </div>
 
         </main>
 
-        <footer>
+        <footer class="flex flex_align_center">
 
             <h3>&copy; 2019</h3>
 
