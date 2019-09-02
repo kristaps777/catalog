@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Favicon link -->
+        <link rel="shortcut icon" href="#">
+        <!-- CSS link -->
+        <link rel="stylesheet" href="styles/product.css">
+        <title>new product</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h2>add new</h2>
+            <input type="submit" name="mass_delete" value="delete checked" form="products">
+
+        </header>
+
+        <main>
+
+            <div class="wrapper">
+                <h3>please fill out all of the parameters</h3>
+                <form id="product_params" action="" method="post" class="form_data">
+
+                    <div class="data_input">
+                        <input name="sku" id="sku" type="text" spellcheck="false" minlength="1" maxlength="30"
+                            autocomplete="off" required>
+                        <label for="sku">SKU<span class="asterisk">*️</span></label>
+                    </div>
+                    <div class="data_input">
+                        <input name="name" id="name" type="text" spellcheck="false" minlength="1" maxlength="30"
+                            autocomplete="off" required>
+                        <label for="name">Name<span class="asterisk">*️</span></label>
+                    </div>
+                    <div class="data_input">
+                        <input name="price" id="price" type="text" spellcheck="false" minlength="1" maxlength="30"
+                            autocomplete="off" required>
+                        <label for="price">Price<span class="asterisk">*️</span></label>
+                    </div>
+
+                    <select name="" id="attribute_type">
+                        <option value="" hidden disabled selected>Choose type...</option>
+                        <option value="">DVD</option>
+                        <option value="">Book</option>
+                        <option value="">Furniture</option>
+                    </select>
+
+                    <section class="hidden">
+                        <div class="data_input">
+                            <input name="size" id="size" type="text" spellcheck="false" minlength="1" maxlength="30"
+                                autocomplete="off" required>
+                            <label for="size">Size<span class="asterisk">*️</span></label>
+                        </div>
+                    </section>
+
+                    <section class="hidden">
+                        <div class="data_input">
+                            <input name="height" id="height" type="text" spellcheck="false" minlength="1" maxlength="30"
+                                autocomplete="off" required>
+                            <label for="height">Height<span class="asterisk">*️</span></label>
+                        </div>
+                        <div class="data_input">
+                            <input name="width" id="width" type="text" spellcheck="false" minlength="1" maxlength="30"
+                                autocomplete="off" required>
+                            <label for="width">Width<span class="asterisk">*️</span></label>
+                        </div>
+                        <div class="data_input">
+                            <input name="length" id="length" type="text" spellcheck="false" minlength="1" maxlength="30"
+                                autocomplete="off" required>
+                            <label for="length">Length<span class="asterisk">*️</span></label>
+                        </div>
+                    </section>
+
+                    <section class="hidden">
+                        <div class="data_input">
+                            <input name="weight" id="weight" type="text" spellcheck="false" minlength="1" maxlength="30"
+                                autocomplete="off" required>
+                            <label for="weight">Weight<span class="asterisk">*️</span></label>
+                        </div>
+                    </section>
+
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+
+            <h3>&copy; 2019</h3>
+
+        </footer>
+
+    </body>
+
+</html>

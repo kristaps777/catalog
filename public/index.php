@@ -8,8 +8,8 @@
          <!-- Favicon link -->
         <link rel="shortcut icon" href="#">
          <!-- CSS link -->
-        <link rel="stylesheet" href="styles/style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <title>catalog</title>
     </head>
 
     <body>
