@@ -14,7 +14,7 @@
 
     <body>
 
-        <header>
+        <header class="flex flex_align_center">
 
             <h2>product catalog</h2>
             <input type="submit" name="mass_delete" value="delete checked" form="products">
@@ -24,7 +24,7 @@
         <main>
 
             <div class="wrapper">
-            <form id="products" action="../private/mass_delete.php" method="post">
+            <form id="products" action="../private/mass_delete.php" method="post" class="flex_justify_center">
                 <?php
                 require_once('../private/classes/Connect.php');
                 $getProducts = new Connect();
@@ -35,7 +35,7 @@
 
         </main>
 
-        <footer>
+        <footer class="flex flex_align_center">
 
             <h3>&copy; 2019</h3>
 

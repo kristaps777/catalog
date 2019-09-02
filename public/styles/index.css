@@ -44,8 +44,6 @@ footer {
     width: 100%;
     color: white;
     background-color: black;
-    display: flex;
-    align-items: center;
     position: fixed;
     z-index: 10;
 }
@@ -80,15 +78,28 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-auto-rows: max-content;
     gap: 1em;
-    justify-content: center;
     height: 100%;
 }
 
 .item {
     width: 200px;
     height: 200px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+/*
+-----------------------------------
+reusable classes
+-----------------------------------
+*/
+.flex {
+    display: flex;
+}
+
+.flex_align_center {
     align-items: center;
+}
+
+.flex_justify_center {
+    justify-content: center;
 }

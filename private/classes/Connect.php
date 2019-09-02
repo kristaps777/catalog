@@ -27,7 +27,7 @@ class Connect
         $this->sql_response = $this->send_sql->fetch_all(MYSQLI_ASSOC);
 
         foreach ($this->sql_response as $key => $row) {
-        echo "<ul class='item'>";
+        echo "<ul class='item flex flex_align_center flex_justify_center'>";
         echo "<input type='checkbox' name='select[]' value='$row[id]'";
         echo "<li>$row[sku]</li>";
         echo "<li>$row[name]</li>";
