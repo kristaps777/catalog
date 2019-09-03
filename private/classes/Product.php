@@ -16,6 +16,7 @@ class Product extends Connect
 
     public $sql_stmt;
 
+    // definitly needs some refactoring, way too much repetition of the same code
      public function addProduct() {
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
 

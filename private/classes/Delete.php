@@ -10,7 +10,7 @@ class Delete extends Connect
         if (isset($_POST[mass_delete])) {
             $this->checkbox = $_POST['select'];
             while (list ($key, $val) = @each ($this->checkbox)) {
-            mysqli_query($this->connectDB(), "DELETE FROM products WHERE id=$val");
+            mysqli_query($this->connectDB(), "DELETE FROM products WHERE id = $val");
             }
         }
     header("Location: ../public/index.php");     
