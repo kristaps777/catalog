@@ -27,9 +27,9 @@
             <div class="wrapper">
             <form id="products" action="../private/mass_delete.php" method="post" class="flex_justify_center">
                 <?php
-                require_once('../private/classes/Connect.php');
-                $getProducts = new Connect();
-                $getProducts->getData();
+                require_once('../private/classes/Render.php');
+                $getProducts = new Render();
+                $getProducts->displayData();
                 ?>
             </form>
             </div>

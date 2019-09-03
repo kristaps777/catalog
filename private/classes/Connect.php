@@ -25,24 +25,26 @@ class Connect
         $this->sql_request = "SELECT * FROM products";
         $this->send_sql = $this->connectDB()->query($this->sql_request);
         $this->sql_response = $this->send_sql->fetch_all(MYSQLI_ASSOC);
-
-        foreach ($this->sql_response as $key => $row) {
-        echo "<ul class='item flex flex_align_center flex_justify_center'>";
-        echo "<input type='checkbox' name='select[]' value='$row[id]'";
-        echo "<li>$row[sku]</li>";
-        echo "<li>$row[name]</li>";
-        echo "<li>&euro;$row[price]</li>";
-        if ($row['type'] == "DVD") {
-            echo "<li>Size: $row[size] MB</li>";
-        } elseif ($row['type'] == "Furniture") {
-            echo "<li>Dimensions: $row[height]x$row[width]x$row[length]</li>";
-        } elseif ($row['type'] == "Book") {
-            echo "<li>Weight: $row[weight] kg</li>";
-        }
-        echo "</ul>";
-        
-    }
         mysqli_close($this->connectDB());
+        return $this->sql_response;
+
+    //     foreach ($this->sql_response as $key => $row) {
+    //     echo "<ul class='item flex flex_align_center flex_justify_center'>";
+    //     echo "<input type='checkbox' name='select[]' value='$row[id]'";
+    //     echo "<li>$row[sku]</li>";
+    //     echo "<li>$row[name]</li>";
+    //     echo "<li>&euro;$row[price]</li>";
+    //     if ($row['type'] == "DVD") {
+    //         echo "<li>Size: $row[size] MB</li>";
+    //     } elseif ($row['type'] == "Furniture") {
+    //         echo "<li>Dimensions: $row[height]x$row[width]x$row[length]</li>";
+    //     } elseif ($row['type'] == "Book") {
+    //         echo "<li>Weight: $row[weight] kg</li>";
+    //     }
+    //     echo "</ul>";
+        
+    // }
+        
     }
 }
 ?>

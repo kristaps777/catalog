@@ -59,13 +59,23 @@ input:focus, button:focus {
     outline: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 input:focus+label,
 input:valid+label {
-    transform: scale(.7) translateY(-135%) translateX(15%);
+    transform: scale(.7) translateY(-50%);
     transition-timing-function: ease-in-out;
     text-transform: uppercase;
     font-weight: bold;
-    background: #efefef;
+}
+
+input:valid+label {
+    color: green;
+    opacity: .5;
 }
 
 input {
@@ -108,6 +118,7 @@ label {
 .data_input {
     width: 100%;
     margin: 10px 0;
+    position: relative;
 }
 
 .wrapper {
