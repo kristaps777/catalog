@@ -18,6 +18,8 @@ body styles
 */
 body {
     overflow-Y: auto;
+    background-color: #efefef;
+    font-family: 'Abel', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -87,6 +89,11 @@ button:active {
 
 input:focus, button:focus {
     outline: none;
+}
+
+input[type=number]:focus~footer,
+input[type=text]:focus~footer {
+    display: none;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -166,6 +173,10 @@ label {
     transform: translateY(15%) translateX(15%);
     transition: .2s linear;
     pointer-events: none;
+}
+
+select {
+    font-family: 'Abel', sans-serif;
 }
 
 .form_data {

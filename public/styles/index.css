@@ -18,6 +18,7 @@ body styles
 */
 body {
     overflow-Y: auto;
+    font-family: 'Abel', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -106,6 +107,7 @@ a {
     color: black;
     background-color: rgba(239, 239, 239, .5);
     border: 2px solid transparent;
+    font-family: 'Abel', sans-serif;
 }
 
 input[type="submit"]:active,
