@@ -13,7 +13,7 @@ normalize properties
 
 /*
 -----------------------------------
-header & footer styles
+body styles
 -----------------------------------
 */
 body {
@@ -59,6 +59,7 @@ footer {
 
 .header_h2 {
     margin-right: auto;
+    font-size: 1em;
 }
 
 /*
@@ -82,7 +83,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-auto-rows: max-content;
-    gap: 1em;
     height: 100%;
 }
 
@@ -100,7 +100,7 @@ a {
     border-radius: 28px;
     display: block;
     cursor: pointer;
-    font-size: 13px;
+    font-size: .5em;
     padding: 10px 10px;
     text-transform: uppercase;
     color: black;
@@ -164,4 +164,22 @@ reusable classes
 
 .flex_justify_center {
     justify-content: center;
+}
+
+/*
+-----------------------------------
+media query
+-----------------------------------
+*/
+@media(min-width: 992px) {
+
+.header_h2 {
+    font-size: 1.5em;
+}
+
+input[type="submit"],
+a {
+    font-size: .8em;
+}
+
 }
