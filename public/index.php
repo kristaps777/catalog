@@ -27,6 +27,7 @@
             <div class="wrapper">
             <form id="products" action="../private/mass_delete.php" method="post" class="flex_justify_center">
                 <?php
+                // Every time this page loads, class Render and the appropriate function for displaying current DB records is called.
                 require_once('../private/classes/Render.php');
                 $getProducts = new Render();
                 $getProducts->displayData();

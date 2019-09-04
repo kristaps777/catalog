@@ -1,3 +1,7 @@
+// I am using an event listener on the <select> tag that has all the available 
+// product types and a switch statement to replace the content of the target <section>
+// based on the selectedIndex of the attribute.
+// The content of the target <section> tag is replaced with a prepared template from templates.js
 let attribute_type = document.getElementById('attribute_type');
 let attribute_stats = document.getElementById('attribute_stats');
 

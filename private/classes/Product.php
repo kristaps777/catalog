@@ -16,7 +16,9 @@ class Product extends Connect
 
     public $sql_stmt;
 
-    // definitly needs some refactoring, way too much repetition of the same code
+// I reference all possible input fields present in the form. Depending on the attribute type chosen,
+// the properties currently displayed will be mandatory to submit via <input required>. The properties that aren't
+// currently displayed will be submitted as well with their default value of "0".
      public function addProduct() {
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
 

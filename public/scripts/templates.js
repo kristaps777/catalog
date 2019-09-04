@@ -1,3 +1,4 @@
+// Prepared templates for the available attributes - DVD, Book, Furniture.
 const dvd_template =
     '<div class="data_input flex flex_align_center">' +
     '<input class="input_background" name="size" id="size" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" spellcheck="false" min="0" step="1"' +

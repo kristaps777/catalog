@@ -1,7 +1,7 @@
 <?php
 require_once('../private/config.php');
 
-// class Connect handles DB connection, DB status and retreives DB data
+// class Connect handles DB connection and retreives DB data
 class Connect
 {
     public $conn_DB;
@@ -26,25 +26,7 @@ class Connect
         $this->send_sql = $this->connectDB()->query($this->sql_request);
         $this->sql_response = $this->send_sql->fetch_all(MYSQLI_ASSOC);
         mysqli_close($this->connectDB());
-        return $this->sql_response;
-
-    //     foreach ($this->sql_response as $key => $row) {
-    //     echo "<ul class='item flex flex_align_center flex_justify_center'>";
-    //     echo "<input type='checkbox' name='select[]' value='$row[id]'";
-    //     echo "<li>$row[sku]</li>";
-    //     echo "<li>$row[name]</li>";
-    //     echo "<li>&euro;$row[price]</li>";
-    //     if ($row['type'] == "DVD") {
-    //         echo "<li>Size: $row[size] MB</li>";
-    //     } elseif ($row['type'] == "Furniture") {
-    //         echo "<li>Dimensions: $row[height]x$row[width]x$row[length]</li>";
-    //     } elseif ($row['type'] == "Book") {
-    //         echo "<li>Weight: $row[weight] kg</li>";
-    //     }
-    //     echo "</ul>";
-        
-    // }
-        
+        return $this->sql_response;        
     }
 }
 ?>

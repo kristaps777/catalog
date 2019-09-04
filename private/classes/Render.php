@@ -6,7 +6,8 @@ class Render extends Connect
 {
 
     public function displayData() {
-
+// Since class Render is a child of class Connect, I can use getData() from class Connect that returns the data from DB
+// and process it.
         foreach ($this->getData() as $key => $row) {
         echo "<ul class='item flex flex_align_center flex_justify_center'>";
         echo "<input type='checkbox' name='select[]' value='$row[id]'";
