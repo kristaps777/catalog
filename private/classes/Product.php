@@ -40,7 +40,7 @@ class Product extends Connect
             $this->sql_stmt->execute();
             $this->connectDB()->close();
         }
-         header("Location: ../public/index.php");
+         header("Location: ../public/product.html");
      }
 
 }

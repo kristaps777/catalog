@@ -83,7 +83,7 @@ main {
 .wrapper form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    grid-auto-rows: max-content;
+    grid-auto-rows: auto;
     height: 100%;
 }
 
@@ -182,6 +182,10 @@ media query
 input[type="submit"],
 a {
     font-size: .8em;
+}
+
+.wrapper form {
+    gap: .5em;
 }
 
 }

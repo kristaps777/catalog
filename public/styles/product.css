@@ -135,8 +135,21 @@ a {
     padding: 10px 10px;
     text-transform: uppercase;
     color: black;
-    background-color: rgba(239, 239, 239, .5);
     border: 2px solid transparent;
+}
+
+input[type="submit"] {
+    background-color: rgba(66, 70, 105, 0.5);
+    width: auto;
+    height: auto;
+}
+
+input[type="submit"]:hover {
+    border-color: #49abfe;
+}
+
+a {
+    background-color: rgba(239, 239, 239, .5);
 }
 
 input[type="submit"]:active,
@@ -151,7 +164,6 @@ a:focus {
     outline: none;
 }
 
-input[type="submit"]:hover,
 a:hover {
     border-color: #49abfe;
     background-color: transparent;
