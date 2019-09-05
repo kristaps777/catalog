@@ -194,6 +194,7 @@ select {
 .form_data {
     width: 100%;
     height: 90%;
+    padding: 0 20px 10px 20px;
 }
 
 .products_stats {
@@ -218,6 +219,7 @@ select {
 
 .wrapper h3 {
     height: 10%;
+    padding-top: 10px;
 }
 
 .data_description {
@@ -260,6 +262,7 @@ media query
 
 .form_data {
     width: 70%;
+    padding: 0;
 }
 
 input[type="submit"],
